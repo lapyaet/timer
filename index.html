@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./config.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="timer">
+      <div class="minute-clock">
+        <span class="" id="countMin">
+          00
+        </span>
+        <p class="">
+          MINUTE
+        </p>
+      </div>
+      <div class="second-clock">
+        <span class="" id="countSec">00</span>
+        <p class="">
+          SECOND
+        </p>
+      </div>
+    </div>
+    <div class=" button__container">
+      <button class=""
+      type="button" 
+      onclick="countingStart()">
+        Start
+      </button>
+      <button  class=""
+      type="button" 
+      onclick="countingStop()">
+        Stop
+      </button>
+      <audio
+      controls
+      src="./win game level 350.wav" id="audioTimer">
+          Your browser does not support the
+          <code>audio</code> element.
+  </audio>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
