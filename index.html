@@ -10,23 +10,23 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <div class="timer">
-      <div class="minute-clock">
-        <span class="" id="countMin">
+    <div class="timer text-white w-96 mx-auto p-2.5 rounded-md flex justify-center gap-20">
+      <div class="flex flex-col justify-center items-center minute-clock gap-3">
+        <span class="text-6xl" id="countMin">
           00
         </span>
         <p class="">
           MINUTE
         </p>
       </div>
-      <div class="second-clock">
-        <span class="" id="countSec">00</span>
+      <div class="flex flex-col justify-center items-center second-clock gap-3">
+        <span class="text-6xl" id="countSec">00</span>
         <p class="">
           SECOND
         </p>
       </div>
     </div>
-    <div class=" button__container">
+    <div class=" button__container flex gap gap-x-80">
       <button class=""
       type="button" 
       onclick="countingStart()">

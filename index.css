@@ -6,39 +6,18 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100%;
     background-color: #10101e;
     font-family: 'Segoe UI', sans-serif !important;
-    gap: 12rem;
+    gap: 10rem;
+    line-height: inherit;
 }
 
 .timer {
-    color: #fff;
     background-color: #2E94E3;
-    width: 400px;
-    padding: 10px 10px;
     border: 3px solid #2E94E3;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
     box-shadow: 0 0 30px #2E94E3;
     -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
-}
-
-
-.minute-clock, .second-clock {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.minute-clock span, .second-clock span{
-    font-size: 4rem;
-}
-
-.button__container {
-    display: flex;
-    gap: 20rem;
 }
 
 .button__container button {
@@ -53,4 +32,29 @@ body {
 .button__container button:hover {
     color: #fff;
     background-color: #2E94E3;
+}
+
+
+@media (min-width:0) and (max-width:480px) {
+    .timer {
+        width: 300px;
+    }
+
+    .minute-clock span, .second-clock span{
+        font-size: 3rem;
+    }
+
+    .minute-clock p, .second-clock p{
+        font-size: 1rem;
+    }
+
+    .button__container {
+        gap: 10rem;
+    }
+}
+
+@media (min-width:481px) and (max-width:900px) {
+    .button__container{
+        gap: 10rem;
+    }
 }
