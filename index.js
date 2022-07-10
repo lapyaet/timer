@@ -3,6 +3,7 @@
 const minute = document.querySelector("#countMin")
 const second = document.querySelector("#countSec")
 const alarm  = document.getElementById("audioTimer")
+const timer =document.querySelector(".timer")
 alarm.style.display = "none"
 
 let count = 180
@@ -11,6 +12,7 @@ function countingStart () {
     if (timerId !== 0) {
         return;
     }
+    timer.classList.add("click")
     timerId =setInterval(function () {
         count--
        updateText(count)
@@ -29,6 +31,7 @@ function countingStop () {
     second.innerText = "00" ;
     timerId = 0;
     count = 180;
+    timer.classList.remove("click")
     updateText(count);
 }
 
