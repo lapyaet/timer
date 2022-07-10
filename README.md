@@ -16,8 +16,3 @@ If you clik TimerApp, you can see this app
 Javascript, HTML, CSS
 
 
-
-## Installation
-
-[TimerApp](https://github.com/lapyaet/timer)
-    
