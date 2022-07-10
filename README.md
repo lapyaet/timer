@@ -1,4 +1,5 @@
-# Timer
+
+# Timer (count-down)
 
 
 
@@ -14,5 +15,18 @@ If you clik TimerApp, you can see this app
 
 ## 🛠 Skills
 Javascript, HTML, CSS
+
+
+## Usage/Examples
+
+```javascript
+selfInterval (function () {
+
+},1000)
+
+function playAlarm() {
+    alarm.play()
+}
+```
 
 
